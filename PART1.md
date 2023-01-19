@@ -27,7 +27,7 @@ List all the features not yet done. Remove this section if there is no incomplet
 2. Define object properties and behaviours
     *  Arrows ( ^ v < > ) - changes direction of alien, add 20 attack to alien
     *  Health ( h )       - adds 20 health to alien if current health is less than max health
-    *  Pod ( p )          - inflicts 10 damage to the nearest zombie
+    *  Pod ( p )          - inflicts 10 damage to the nearest zombie relative to the pod (random if multiple zombies are equally close)
     *  Rock ( r )         - stops alien from moving, reveals new object underneath it when hit
     *  Trail ( . )        - left behind as alien moves, reset to random object after alien's turn ends
 
@@ -42,9 +42,19 @@ List all the features not yet done. Remove this section if there is no incomplet
     * load  - loads game file, asks user whether current game should be saved
     * quit  - quits the game, asks user for confirmation
 
-4. Display active turn of which character and game status message during turns
+4. Define zombie behaviours and movements during turns
+    * zombie to move in one random direction (up, down, left or right) without any other zombies or alien existing in that space
+    * objects that were previously occupying spaces that zombie moved to are destroyed
+    * zombie does not move if there are no legal movements to be made (trapped by corners, zombies and/or alien)
+    * check whether alien is within range of attack of zombie and attack (or not attack) accordingly
+    * calculate and display health of alien after each successful attack
 
-5. Load and save game function
+5. Define alien behaviours and movements during turns
+    * _to be added_
+
+6. Display active turn of which character and game status message during turns
+
+6. Load and save game function
     * save  - saves the game
     * load  - loads game file, asks user whether current game should be saved
     * quit  - quits the game, asks user for confirmation
