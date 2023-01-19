@@ -21,8 +21,8 @@ List all the features not yet done. Remove this section if there is no incomplet
 1. Randomly generate game board default settings (columns and rows must be in odd number values)
     * Allows user to change default settings and input custom values (validation for odd number inputs only for game board dimensions)
     * Randomize alien and zombie attributes
-           * Alien  - Life, Attack (0)
-           * Zombie - Life, Attack, Range (less than game board dimensions)
+         * Alien  - Life, Attack (0)
+         * Zombie - Life, Attack, Range (less than game board dimensions)
 
 2. Define object properties and behaviours
     *  Arrows ( ^ v < > ) - changes direction of alien, add 20 attack to alien
